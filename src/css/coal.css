@@ -7,7 +7,6 @@ video {
 }
 
 /* Layout*/
-html,
 body {
   width: 100%;
   height: 100%;
@@ -95,9 +94,9 @@ h5 {
 }
 
 /* Banner */
-.hero {
-  background: url(../img/city2.jpg) no-repeat center / cover;
-  height: 100%;
+.banner {
+  background: url(../img/coalbanner.jpg) no-repeat center / cover;
+  height: 60%;
   width: 100%;
   display: table;
   position: relative;
@@ -114,13 +113,13 @@ h5 {
   z-index: 0;
 }
 
-.hero-content {
+.banner-content {
   display: table-cell;
   vertical-align: middle;
-  padding-top: 75px;
+  padding-top: 100px;
 }
 
-.hero-text {
+.banner-text {
   max-width: 890px;
   width: 100%;
   margin: 0 auto;
@@ -128,123 +127,136 @@ h5 {
   text-align: center;
 }
 
-.hero-text h1 {
+.banner-text h1 {
   position: relative;
   margin: 0;
   color: #fff;
+  font-size: 50px;
 }
 
-.hero-text p {
+.banner-text p {
   position: relative;
   margin: 45px 0 30px;
-  font-size: 22px;
+  font-size: 18px;
   color: #fff;
 }
 
 /* main */
-.intro {
-  margin: 5rem 10rem 0 10rem;
-  text-align: center;
-  line-height: 38px;
+.paragraph {
+  margin: 5rem 20rem 2rem 20rem;
+  height: 60vh;
 }
 
-.intro p {
-  font-size: 20px;
+.paragraph p {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 0 20px 0;
   color: #26272d;
-  padding: 0 50px 0 50px;
 }
 
-.site-section {
-  background-image: linear-gradient(#ffffff, #cccbcb, #ffffff);
+/* FAQ */
+
+.question {
+  margin: 5rem 18rem 2rem 18rem;
+  height: auto;
 }
 
-.main-content {
-  height: 90vh;
-  margin: 4rem 5rem 0 5rem;
+hr {
+  display: block;
+  width: 25%;
+  height: 3px;
+  margin-bottom: 5em;
+  border: none;
+  background-color: #26292c;
+}
+.question h3 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.col {
+  flex: 1;
+}
+
+.col:last-child {
+  margin-left: 2rem;
+}
+
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5rem;
+}
+
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.tab-label {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.item {
-  height: 35vw;
-  width: 20vw;
-  position: relative;
-}
-
-.circle {
-  height: 23vw;
-  width: 23vw;
-  border-radius: 50%;
-  position: relative;
-}
-
-.pic1 {
-  background-image: url(../img/coal.jpg);
-  background-size: cover;
-  height: 20vw;
-  width: 20vw;
-  border-radius: 50%;
-}
-
-.pic2 {
-  background-image: url(../img/wind.jpg);
-  background-size: cover;
-  height: 20vw;
-  width: 20vw;
-  border-radius: 50%;
-}
-
-.pic3 {
-  background-image: url(../img/electric.jpg);
-  background-size: cover;
-  height: 20vw;
-  width: 20vw;
-  border-radius: 50%;
-}
-
-.circle h3 {
-  color: #ffffff;
-  opacity: 0.7;
-  font-size: 2.25rem;
-  letter-spacing: 0.5rem;
-  position: absolute;
-  top: 42%;
-  left: 27%;
-}
-
-.circle #electric {
-  color: #ffffff;
-  opacity: 0.7;
-  font-size: 2.25rem;
-  letter-spacing: 0.5rem;
-  position: absolute;
-  top: 42%;
-  left: 9%;
-}
-
-.learnmore a {
-  white-space: nowrap;
-  background-color: black;
-  padding: 4% 20%;
-  border-radius: 20px;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.2vw;
-  letter-spacing: 1px;
-  font-weight: 200;
-  color: white;
-  text-decoration: none;
-}
-
-.learnmore a:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: space-between;
+  padding: 1.25em;
+  background: #44607c;
   cursor: pointer;
-  color: white;
 }
+
+.tab-label:hover {
+  background: #2c3e50;
+}
+
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+}
+
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+
+.tab-close:hover {
+  background: darken(#2c3e50, 10%);
+}
+
+input:checked + .tab-label {
+  background: darken(#2c3e50, 10%);
+}
+
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+/* footer */
 
 footer {
   height: 5rem;

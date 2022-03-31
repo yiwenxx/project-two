@@ -7,9 +7,91 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/main.js" defer></script>
-    <title>Document</title>
+    <title>Project 2</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    Hello, world!
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">
+          <img src="./img/logo.png" alt="logo" />
+        </div>
+        <nav class="nav">
+          <div class="navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="active">
+                <a href="index.html">Home</a>
+              </li>
+              <li><a href="coal.html">Coal</a></li>
+              <li><a href="wind.html">Wind</a></li>
+              <li><a href="electric.html">Electric</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero overlay">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Powering a Nation</h1>
+          <p>The quest for energy in a changing USA</p>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section>
+        <div class="intro">
+          <p>
+            Energy makes America go. <br />
+            But the way we get it is more complex and vulnerable than most of us
+            realize. <br />The truth about energy is that change won't come
+            easily. <br />Here, you can explore America’s energy stories, meet
+            the people behind the debate and join the conversation about our
+            future.
+          </p>
+        </div>
+      </section>
+
+      <section class="site-section">
+        <div class="main-content">
+          <div class="item">
+            <div class="circle pic1">
+              <h3>COAL</h3>
+            </div>
+            <div class="learnmore"><a href="coal.html">Learn More</a></div>
+          </div>
+
+          <div class="item">
+            <div class="circle pic2">
+              <h3>WIND</h3>
+            </div>
+            <div class="learnmore"><a href="wind.html">Learn More</a></div>
+          </div>
+
+          <div class="item">
+            <div class="circle pic3">
+              <h3 id="electric">ELECTRIC</h3>
+            </div>
+            <div class="learnmore"><a href="electric.html">Learn More</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2022 Yiwen Xu</p>
+      <p>Designed for MEJO 187 at UNC Chapel Hill</p>
+    </footer>
   </body>
 </html>
