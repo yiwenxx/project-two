@@ -141,10 +141,23 @@ h5 {
   color: #fff;
 }
 
-/* main */
+/* main
+margin: 5em 20em 2em 20em; */
+
+#horiline {
+  display: block;
+  width: 12rem;
+  height: 3px;
+  margin-top: 5em;
+  margin-bottom: 2em;
+  border: none;
+  background-color: #26292c;
+}
 .paragraph {
-  margin: 5rem 20rem 2rem 20rem;
-  height: 60vh;
+  max-width: 880px;
+  padding: 50px 20px 50px 20px;
+  margin: 0 auto;
+  height: auto;
 }
 
 .paragraph p {
@@ -154,6 +167,12 @@ h5 {
   color: #26272d;
 }
 
+/* Video */
+.video {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 20px;
+}
 /* FAQ */
 
 .question {
@@ -163,7 +182,7 @@ h5 {
 
 hr {
   display: block;
-  width: 25%;
+  width: 12rem;
   height: 3px;
   margin-bottom: 5em;
   border: none;
