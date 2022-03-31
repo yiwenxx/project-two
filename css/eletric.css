@@ -1,0 +1,155 @@
+/* Decent Defaults */
+
+img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Layout*/
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #26272d;
+}
+
+p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #9fa3a7;
+}
+
+h1 {
+  font-size: 62px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #26292c;
+}
+
+/* Header */
+.site-header {
+  position: absolute;
+  padding: 30px 0 0;
+  background-color: transparent;
+  width: 100%;
+  z-index: 3;
+}
+
+.container {
+  display: flex;
+  margin-left: 2rem;
+}
+
+.logo {
+  width: 13rem;
+  height: 4rem;
+  padding: 0 0 4rem 0;
+  position: relative;
+}
+
+/* Nav */
+.nav {
+  margin-left: 25%;
+  padding-top: 10px;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-nav > li > a {
+  padding: 0;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.navbar-nav > li + li {
+  margin-left: 30px;
+}
+
+.navbar-nav a:hover {
+  text-decoration: underline black 5px;
+  color: rgb(134, 134, 134);
+}
+
+/* Banner */
+.banner {
+  background: url(../img/grid1.jpg) no-repeat center / cover;
+  height: 60%;
+  width: 100%;
+  display: table;
+  position: relative;
+}
+
+.overlay1:before {
+  content: "";
+  background-color: rgba(134, 134, 134, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.banner-content {
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 100px;
+}
+
+.banner-text {
+  max-width: 890px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.banner-text h1 {
+  position: relative;
+  margin: 0;
+  color: #fff;
+  font-size: 50px;
+}
+
+.banner-text p {
+  position: relative;
+  margin: 45px 0 30px;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Main */
+.article {
+  margin: 5rem 20rem 2rem 20rem;
+  height: 60vh;
+}
+
+.article p {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px 0 20px 0;
+  color: #26272d;
+}
