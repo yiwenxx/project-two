@@ -90,7 +90,7 @@ h5 {
 }
 
 .navbar-nav a:hover {
-  text-decoration: underline black 5px;
+  text-decoration: underline #fff 2px;
   color: rgb(134, 134, 134);
 }
 
