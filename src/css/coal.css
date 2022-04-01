@@ -89,13 +89,12 @@ h5 {
 }
 
 .navbar-nav a:hover {
-  text-decoration: underline black 5px;
-  color: rgb(134, 134, 134);
+  text-decoration: underline #fff 2px;
 }
 
 /* Banner */
 .banner {
-  background: url(../img/coalbanner.jpg) no-repeat center / cover;
+  background: url(../img/pic3.jpeg) no-repeat center / cover;
   height: 60%;
   width: 100%;
   display: table;
@@ -104,7 +103,7 @@ h5 {
 
 .overlay:before {
   content: "";
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -188,9 +187,11 @@ hr {
   border: none;
   background-color: #26292c;
 }
+
 .question h3 {
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+  font-size: 1.5rem;
 }
 
 input {
@@ -225,12 +226,12 @@ input {
   display: flex;
   justify-content: space-between;
   padding: 1.25em;
-  background: #44607c;
+  background: rgb(175, 48, 46);
   cursor: pointer;
 }
 
 .tab-label:hover {
-  background: #2c3e50;
+  background: rgb(139, 22, 20);
 }
 
 .tab-label::after {

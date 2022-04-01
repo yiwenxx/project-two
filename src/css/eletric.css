@@ -89,13 +89,12 @@ h5 {
 }
 
 .navbar-nav a:hover {
-  text-decoration: underline black 5px;
-  color: rgb(134, 134, 134);
+  text-decoration: underline #fff 2px;
 }
 
 /* Banner */
 .banner {
-  background: url(../img/grid1.jpg) no-repeat center / cover;
+  background: url(../img/pic4.jpeg) no-repeat center / cover;
   height: 60%;
   width: 100%;
   display: table;
@@ -104,7 +103,7 @@ h5 {
 
 .overlay1:before {
   content: "";
-  background-color: rgba(134, 134, 134, 0.5);
+  background-color: rgba(134, 134, 134, 0.1);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -158,7 +157,7 @@ h5 {
 
 .article h3 {
   font-family: "DM Serif Display", serif;
-  font-size: 50px;
+  font-size: 45px;
   line-height: 50px;
 }
 
@@ -173,13 +172,28 @@ figure {
 }
 
 figure figcaption {
-  font-size: 13px;
+  font-size: 14px;
   padding: 10px 0 0 0;
   line-height: 18px;
   text-align: left;
+  color: #41464b;
 }
 
 figure figcaption span {
   font-size: 12px;
   color: #5b6268;
+}
+
+/* Footer */
+footer {
+  height: 5rem;
+  padding: 5px;
+  padding-top: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: #ebc5c5;
+}
+
+footer p {
+  color: #26272d;
 }
