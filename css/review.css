@@ -1,0 +1,199 @@
+/* Decent Defaults */
+
+img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Layout*/
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #26272d;
+}
+
+p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #9fa3a7;
+}
+
+h1 {
+  font-size: 62px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #26292c;
+}
+
+/* Header */
+.site-header {
+  position: absolute;
+  padding: 30px 0 0;
+  background-color: transparent;
+  width: 100%;
+  z-index: 3;
+}
+
+.container {
+  display: flex;
+  margin-left: 2rem;
+}
+
+.logo {
+  width: 13rem;
+  height: 4rem;
+  padding: 0 0 4rem 0;
+  position: relative;
+}
+
+/* Nav */
+.nav {
+  margin-left: 25%;
+  padding-top: 10px;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-nav > li > a {
+  padding: 0;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.navbar-nav > li + li {
+  margin-left: 30px;
+}
+
+.navbar-nav a:hover {
+  text-decoration: underline #fff 2px;
+}
+
+/* Banner */
+.banner {
+  background: url(../img/pic4.jpeg) no-repeat center / cover;
+  height: 60%;
+  width: 100%;
+  display: table;
+  position: relative;
+}
+
+.overlay1:before {
+  content: "";
+  background-color: rgba(134, 134, 134, 0.1);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.banner-content {
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 100px;
+}
+
+.banner-text {
+  max-width: 890px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.banner-text h1 {
+  position: relative;
+  margin: 0;
+  color: #fff;
+  font-size: 50px;
+}
+
+.banner-text p {
+  position: relative;
+  margin: 45px 0 30px;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Main */
+.article {
+  max-width: 880px;
+  padding: 50px 30px 50px 30px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.article p {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0 20px 0;
+  color: #26272d;
+}
+
+.article h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 45px;
+  line-height: 50px;
+}
+
+.article h5 {
+  margin-bottom: 50px;
+  margin-top: 30px;
+  color: #707981;
+}
+
+figure {
+  padding: 35px 0 35px 0;
+}
+
+figure figcaption {
+  font-size: 14px;
+  padding: 10px 0 0 0;
+  line-height: 18px;
+  text-align: left;
+  color: #41464b;
+}
+
+figure figcaption span {
+  font-size: 12px;
+  color: #5b6268;
+}
+
+/* Footer */
+footer {
+  height: 5rem;
+  padding: 5px;
+  padding-top: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: #ebc5c5;
+}
+
+footer p {
+  color: #26272d;
+}
