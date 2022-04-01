@@ -252,3 +252,96 @@ footer {
 footer p {
   color: white;
 }
+
+/* Media Queries */
+
+/* Mobile Only Styles */
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 15em;
+    height: 5em;
+  }
+  .container {
+    display: flex;
+    margin-left: 1rem;
+  }
+  .site-header {
+    padding: 30px 0 0;
+    background-color: transparent;
+    width: 100%;
+    z-index: 3;
+  }
+  .hero-text h1 {
+    font-size: 55px;
+  }
+
+  .hero-text p {
+    margin: 45px 20px 30px 20px;
+    font-size: 18px;
+  }
+
+  #tvtype {
+    font-size: 14px;
+  }
+
+  .main-content {
+    margin: 8rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .item {
+    height: 65vw;
+    width: 50vw;
+  }
+
+  .circle {
+    height: 50vw;
+    width: 50vw;
+  }
+
+  .pic1,
+  .pic2,
+  .pic3 {
+    height: 50vw;
+    width: 50vw;
+  }
+}
+
+/* Tablet Only Styles */
+@media only screen and (min-width: 601px) {
+  .circle a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.85rem;
+    letter-spacing: 0.4rem;
+    position: absolute;
+  }
+
+  .item {
+    height: 350px;
+    width: 250px;
+  }
+
+  .circle {
+    height: 250px;
+    width: 250px;
+  }
+
+  .pic1,
+  .pic2,
+  .pic3 {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+/* Desktop Only Styles */
+@media only screen and (min-width: 768px) {
+  .item {
+    height: 400px;
+    width: 250px;
+  }
+}
