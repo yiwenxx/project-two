@@ -152,6 +152,7 @@ margin: 5em 20em 2em 20em; */
   border: none;
   background-color: #26292c;
 }
+
 .paragraph {
   max-width: 880px;
   padding: 50px 30px 50px 30px;
@@ -175,8 +176,9 @@ margin: 5em 20em 2em 20em; */
 /* FAQ */
 
 .question {
-  margin: 5rem 18rem 2rem 18rem;
+  margin: 0 auto;
   height: auto;
+  max-width: 880px;
 }
 
 hr {
@@ -202,10 +204,6 @@ input {
 
 .col {
   flex: 1;
-}
-
-.col:last-child {
-  margin-left: 2rem;
 }
 
 /* Accordion styles */
@@ -289,4 +287,58 @@ footer {
 
 footer p {
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .paragraph {
+    max-width: 880px;
+    padding: 50px 60px 40px 60px;
+  }
+
+  .video {
+    padding: 60px;
+  }
+
+  .question {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .paragraph {
+    max-width: 880px;
+    padding: 50px 60px 40px 60px;
+  }
+
+  .video {
+    padding: 60px;
+  }
+
+  .question {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .paragraph {
+    max-width: 880px;
+    padding: 50px 30px 50px 30px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .video {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .question {
+    margin: 0 auto;
+    height: auto;
+    max-width: 880px;
+    padding: 25px;
+  }
 }
