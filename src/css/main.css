@@ -253,6 +253,13 @@ footer p {
   color: white;
 }
 
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
 /* Media Queries */
 
 /* Mobile Only Styles */
