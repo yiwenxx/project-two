@@ -55,14 +55,14 @@ h5 {
 }
 
 .logo {
-  width: 13rem;
-  height: 5rem;
+  width: 200px;
+  height: 50px;
   position: relative;
 }
 
 /* Nav */
 .nav {
-  margin-left: 25%;
+  margin-left: 23%;
   padding-top: 10px;
 }
 
@@ -265,8 +265,8 @@ footer a {
 /* Mobile Only Styles */
 @media only screen and (max-width: 600px) {
   .logo {
-    width: 15em;
-    height: 5em;
+    width: 100px;
+    height: 35px;
   }
   .container {
     display: flex;
@@ -318,6 +318,10 @@ footer a {
 
 /* Tablet Only Styles */
 @media only screen and (min-width: 601px) {
+  .logo {
+    width: 125px;
+    height: 40px;
+  }
   .circle a {
     text-decoration: none;
     color: #ffffff;
@@ -343,6 +347,11 @@ footer a {
     height: 250px;
     width: 250px;
   }
+
+  .nav {
+    margin-left: 10%;
+    padding-top: 10px;
+  }
 }
 
 /* Desktop Only Styles */
@@ -350,5 +359,10 @@ footer a {
   .item {
     height: 400px;
     width: 250px;
+  }
+
+  .nav {
+    margin-left: 23%;
+    padding-top: 10px;
   }
 }
