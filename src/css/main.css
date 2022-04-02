@@ -55,14 +55,14 @@ h5 {
 }
 
 .logo {
-  width: 200px;
-  height: 50px;
+  width: 15rem;
+  height: 4rem;
   position: relative;
 }
 
 /* Nav */
 .nav {
-  margin-left: 23%;
+  margin-left: 25%;
   padding-top: 10px;
 }
 
@@ -265,8 +265,8 @@ footer a {
 /* Mobile Only Styles */
 @media only screen and (max-width: 600px) {
   .logo {
-    width: 100px;
-    height: 35px;
+    width: 8rem;
+    height: 2rem;
   }
   .container {
     display: flex;
@@ -319,8 +319,8 @@ footer a {
 /* Tablet Only Styles */
 @media only screen and (min-width: 601px) {
   .logo {
-    width: 125px;
-    height: 40px;
+    width: 10rem;
+    height: 2.5rem;
   }
   .circle a {
     text-decoration: none;
@@ -349,7 +349,7 @@ footer a {
   }
 
   .nav {
-    margin-left: 10%;
+    margin-left: 0%;
     padding-top: 10px;
   }
 }
@@ -364,5 +364,10 @@ footer a {
   .nav {
     margin-left: 23%;
     padding-top: 10px;
+  }
+
+  .logo {
+    width: 12rem;
+    height: 3rem;
   }
 }

@@ -54,7 +54,7 @@ h5 {
 }
 
 .logo {
-  width: 13rem;
+  width: 15rem;
   height: 4rem;
   padding: 0 0 4rem 0;
   position: relative;
@@ -313,6 +313,10 @@ footer a {
 }
 
 @media only screen and (min-width: 601px) {
+  .logo {
+    width: 10rem;
+    height: 2.5rem;
+  }
   .paragraph {
     max-width: 880px;
     padding: 50px 60px 40px 60px;
@@ -347,5 +351,15 @@ footer a {
     height: auto;
     max-width: 880px;
     padding: 25px;
+  }
+
+  .nav {
+    margin-left: 23%;
+    padding-top: 10px;
+  }
+
+  .logo {
+    width: 12rem;
+    height: 3rem;
   }
 }

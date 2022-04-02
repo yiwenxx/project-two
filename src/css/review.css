@@ -233,6 +233,10 @@ footer a {
     font-size: 45px;
     line-height: 50px;
   }
+  .logo {
+    width: 10rem;
+    height: 2.5rem;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -247,5 +251,14 @@ footer a {
     font-family: "DM Serif Display", serif;
     font-size: 45px;
     line-height: 50px;
+  }
+  .nav {
+    margin-left: 23%;
+    padding-top: 10px;
+  }
+
+  .logo {
+    width: 12rem;
+    height: 3rem;
   }
 }
